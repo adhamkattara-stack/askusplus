@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Us Plus | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  
+  
+  <link rel="icon" type="image/png" href="images/askusplus_leaf_favicon.png">
+
+</head>
+
+<body class="portfolio-page">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="nav" id="navbar">
+  <div class="container navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Ask Us Plus Logo">
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+      <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+      <a href="blog.html" data-i18n="nav_articles">Articles</a>
+      <a href="contact.html" class="nav-btn" data-i18n="nav_contact">Contact Us</a>
+
+      <button id="langToggle" class="nav-lang">عربي</button>
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="about.html" data-i18n="nav_about">About</a>
+  <a href="services.html" data-i18n="nav_services">Services</a>
+  <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+  <a href="blog.html" data-i18n="nav_articles">Articles</a>
+  <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+
+  <button id="langToggleMobile" class="nav-lang mobile-lang">عربي</button>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero hero-small">
+  <div class="container">
+    <span class="hero-badge" data-i18n="portfolio_badge">Our Work</span>
+    <h1 data-i18n="portfolio_hero_title">
+      Projects That <span>Deliver Results</span>
+    </h1>
+    <p data-i18n="portfolio_hero_desc">
+      A selection of brands we helped grow through strategy,
+      creativity, and performance-driven execution.
+    </p>
+  </div>
+</section>
+
+<!-- ================= GROWTH STORY ================= -->
+<section class="portfolio-section growth-section">
+  <div class="container growth-grid">
+
+    <div class="growth-image">
+      <img
+        src="images/growth.png"
+        alt="Growth dashboard and analytics"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="growth-content">
+      <h2 data-i18n="growth_title">
+        Growth doesn’t <span>happen by accident</span>
+      </h2>
+
+      <p data-i18n="growth_desc">
+        Every brand we work with receives a custom growth system, 
+        strategy, creatives, data, and ongoing optimization.
+        No shortcuts. No guessing. Just measurable progress.
+      </p>
+
+      <ul class="growth-points">
+        <li data-i18n="growth_point_1"></li>
+        <li data-i18n="growth_point_2"></li>
+        <li data-i18n="growth_point_3"></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider-wide"></div>
+
+
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="portfolio-section">
+  <div class="container">
+
+    <h2 class="section-title" data-i18n="portfolio_section_title"></h2>
+
+    <!-- FILTERS -->
+    <div class="portfolio-filters-wrapper">
+      <div class="portfolio-filters">
+        <button class="filter-btn" data-filter="social" data-i18n="filter_social"></button>
+        <button class="filter-btn" data-filter="logos" data-i18n="filter_logos"></button>
+        <button class="filter-btn" data-filter="videos" data-i18n="filter_videos"></button>
+        <button class="filter-btn" data-filter="web" data-i18n="filter_web"></button>
+        
+      </div>
+    </div>
+
+    <!-- SLIDER (IMPORTANT: INSIDE CONTAINER) -->
+    <div class="portfolio-slider">
+
+      <button id="prevSlide" class="slide-btn slide-left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="portfolio-items" id="portfolioGrid"></div>
+
+      <button id="nextSlide" class="slide-btn slide-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+    <div class="portfolio-dots" id="portfolioDots"></div>
+
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container">
+    <h2 data-i18n="portfolio_cta_title">
+      Want Your Brand to Be <span>Next?</span>
+    </h2>
+    <p data-i18n="portfolio_cta_desc">
+      Let’s create work that drives real business growth.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer no-rtl fixed-footer-mobile">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="images/footer.png" alt="Ask Us Plus" class="footer-logo">
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer_contact_title">Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Zezinia, Alexandria, Egypt</p>
+      <p><i class="fa-solid fa-phone"></i> +20 109 5282 910</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@askusplus.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-follow" data-i18n="footer_follow_title">Follow Us</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/askusplus5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/askusplus?igsh=MTljeW5oc3h0YTU3Yw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@askusplusmarketing" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@askusplus?_r=1&_t=ZS-93YmCLy3WQj" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Ask Us Plus. All rights reserved.
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/portfolio.js"></script>
+<script src="js/i18n.js"></script>
+<!-- FLOATING SOCIAL ICONS -->
+<div class="floating-social">
+  <a href="https://www.facebook.com/askusplus5/" target="_blank" class="fb">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/askusplus?igsh=MTljeW5oc3h0YTU3Yw==" target="_blank" class="ig">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@askusplus?_r=1&_t=ZS-93YmCLy3WQj" target="_blank" class="tk">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://www.youtube.com/@askusplusmarketing" target="_blank" class="yt">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/201095282910" target="_blank" class="whatsapp-btn">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- PORTFOLIO LIGHTBOX -->
+<div id="portfolioLightbox" class="portfolio-lightbox hidden">
+  <span class="lightbox-close">&times;</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span onclick="closeVideo()" class="close-video">×</span>
+    <iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+</body>
+</html>

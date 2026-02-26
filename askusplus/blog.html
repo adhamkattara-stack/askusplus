@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title data-i18n="blog_title">Ask Us Plus | Articles</title>
+  <meta name="description" content="Insights, marketing strategies, branding tips, and digital growth articles by Ask Us Plus.">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="icon" type="image/png" href="images/askusplus_leaf_favicon.png">
+
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+<nav class="nav" id="navbar">
+  <div class="container navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Ask Us Plus Logo">
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+      <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+      <a href="blog.html" data-i18n="nav_articles">Articles</a>
+      <a href="contact.html" class="nav-btn" data-i18n="nav_contact">Contact Us</a>
+
+      <button id="langToggle" class="nav-lang">عربي</button>
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="about.html" data-i18n="nav_about">About</a>
+  <a href="services.html" data-i18n="nav_services">Services</a>
+  <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+  <a href="blog.html" data-i18n="nav_articles">Articles</a>
+  <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+
+  <button id="langToggleMobile" class="nav-lang mobile-lang">عربي</button>
+</div>
+
+<!-- BLOG HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-grid">
+
+      <!-- TEXT SIDE -->
+      <div class="hero-content">
+
+        <div class="hero-badge" data-i18n="blog_badge">
+          INSIGHTS
+        </div>
+
+        <h1>
+          <span data-i18n="blog_title_main_1">
+            Growth. Strategy.
+          </span>
+          <br>
+          <span data-i18n="blog_title_main_2">
+            Clarity.
+          </span>
+        </h1>
+
+        <p data-i18n="blog_subtitle">
+          Real marketing knowledge that actually moves brands forward.
+          No fluff. Just actionable insights.
+        </p>
+
+      </div>
+
+      <!-- IMAGE SIDE -->
+      <div class="hero-visual-image">
+        <img 
+          src="images/blog-hero.png" 
+          alt="Marketing Insights"
+          class="hero-main-image"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ARTICLES GRID -->
+  <section class="blog-section">
+
+    <div class="blog-container">
+
+      <!-- Loading State -->
+      <div id="blogLoading" class="blog-loading" data-i18n="blog_loading">
+  Loading articles...
+</div>
+
+
+      <!-- Articles will load here -->
+      <div class="blog-grid" id="blogGrid"></div>
+
+      <!-- Empty State -->
+      <div id="blogEmpty" class="blog-empty" style="display:none;">
+  <h3 data-i18n="blog_empty_title">No articles yet</h3>
+  <p data-i18n="blog_empty_subtitle">
+    New content is coming soon.
+  </p>
+</div>
+
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script type="module" src="js/blog.js"></script>
+  <script type="module" src="js/i18n.js"></script>
+   <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

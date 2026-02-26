@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ask Us Plus | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONT -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ADMIN CSS -->
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+  <div class="admin-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="admin-sidebar">
+      <div>
+        <div class="admin-logo">Ask Us Plus</div>
+
+        <div class="admin-menu">
+          <button class="menu-btn active" data-section="adsSection">
+            Ads
+          </button>
+
+          <button class="menu-btn" data-section="portfolioSection">
+            Portfolio
+          </button>
+
+          <button class="menu-btn" data-section="articlesSection">
+            Articles
+          </button>
+        </div>
+      </div>
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="admin-content">
+
+      <!-- ================= ADS SECTION ================= -->
+      <section id="adsSection" class="admin-section active">
+        <h2>Upload Ad</h2>
+
+        <input type="file" id="adFile" accept="image/*" />
+        <input type="url" id="adLink" placeholder="Ad link (optional)" />
+
+        <select id="adPosition">
+          <option value="top">Top Ads</option>
+          <option value="bottom">Bottom Ads</option>
+        </select>
+
+        <button id="uploadAdBtn">Upload Ad</button>
+        <button id="deleteAllAdsBtn" class="btn-delete-all">
+          Delete All Ads
+        </button>
+
+        <div class="admin-grid" id="adsGrid"></div>
+      </section>
+
+
+      <!-- ================= PORTFOLIO SECTION ================= -->
+      <section id="portfolioSection" class="admin-section">
+        <h2>Upload Portfolio</h2>
+
+        <input
+          type="file"
+          id="portfolioFiles"
+          accept="image/*,video/*"
+          multiple
+        />
+        <input 
+  type="url" 
+  id="portfolioYoutube"
+  placeholder="YouTube video link (optional)"
+/>
+
+
+        <select id="portfolioCategory">
+          <option value="logos">Logos</option>
+          <option value="videos">Video Production</option>
+          <option value="web">Web Design</option>
+          <option value="social">Social Media</option>
+        </select>
+
+        <button id="uploadPortfolioBtn">Upload Portfolio</button>
+        <button id="deleteAllPortfolioBtn" class="btn-delete-all">
+          Delete All Portfolio
+        </button>
+
+        <!-- FILTERS -->
+        <div class="portfolio-admin-filters">
+          <button class="portfolio-filter active" data-category="all">
+            All (<span class="count" data-count="all">0</span>)
+          </button>
+
+          <button class="portfolio-filter" data-category="logos">
+            Logos (<span class="count" data-count="logos">0</span>)
+          </button>
+
+          <button class="portfolio-filter" data-category="videos">
+            Video Production (<span class="count" data-count="videos">0</span>)
+          </button>
+
+          <button class="portfolio-filter" data-category="web">
+            Web Design (<span class="count" data-count="web">0</span>)
+          </button>
+
+          <button class="portfolio-filter" data-category="social">
+            Social Media (<span class="count" data-count="social">0</span>)
+          </button>
+        </div>
+
+        <div class="admin-grid" id="portfolioGrid"></div>
+      </section>
+
+
+      <!-- ================= ARTICLES SECTION ================= -->
+      <section id="articlesSection" class="admin-section">
+
+        <h2>Manage Articles</h2>
+
+        <!-- LANGUAGE TABS -->
+        <div class="article-lang-tabs">
+          <button type="button" class="lang-tab active" data-lang="en">
+            English
+          </button>
+          <button type="button" class="lang-tab" data-lang="ar">
+            Arabic
+          </button>
+        </div>
+
+        <!-- ================= ENGLISH ================= -->
+        <div class="article-lang article-en active">
+
+          <input
+            type="text"
+            id="articleTitle"
+            placeholder="Title (English)"
+          />
+
+          <input
+            type="text"
+            id="articleExcerpt"
+            placeholder="Excerpt (English)"
+          />
+
+          <textarea
+            id="articleContent"
+            rows="8"
+            placeholder="Content (English)"
+          ></textarea>
+
+        </div>
+
+        <!-- ================= ARABIC ================= -->
+        <div class="article-lang article-ar">
+
+          <input
+            type="text"
+            id="articleTitleAr"
+            placeholder="عنوان المقال بالعربية"
+          />
+
+          <input
+            type="text"
+            id="articleExcerptAr"
+            placeholder="ملخص قصير بالعربية"
+          />
+
+          <textarea
+            id="articleContentAr"
+            rows="8"
+            placeholder="محتوى المقال بالعربية"
+          ></textarea>
+
+        </div>
+
+        <!-- COVER IMAGE -->
+        <div class="article-cover-upload">
+          <label>Cover Image</label>
+          <input type="file" id="articleCover" accept="image/*" />
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="article-actions">
+          <button id="uploadArticleBtn" class="btn-primary">
+            Publish Article
+          </button>
+
+          <button
+            id="cancelEditBtn"
+            class="btn-secondary"
+            style="display:none;"
+          >
+            Cancel Edit
+          </button>
+
+          <button
+            id="deleteAllArticlesBtn"
+            class="btn-delete-all"
+          >
+            Delete All Articles
+          </button>
+        </div>
+
+        <!-- LIST -->
+        <h3 style="margin-top: 40px;">
+          Published Articles
+        </h3>
+
+        <div class="admin-grid" id="articlesGrid"></div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Us Plus | Contact Us</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <link rel="icon" type="image/png" href="images/askusplus_leaf_favicon.png">
+
+</head>
+
+<body class="contact-page">
+
+<!-- NAVBAR -->
+<nav class="nav" id="navbar">
+  <div class="container navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Ask Us Plus Logo">
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+      <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+      <a href="blog.html" data-i18n="nav_articles">Articles</a>
+      <a href="contact.html" class="nav-btn" data-i18n="nav_contact">Contact Us</a>
+
+      <button id="langToggle" class="nav-lang">عربي</button>
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="about.html" data-i18n="nav_about">About</a>
+  <a href="services.html" data-i18n="nav_services">Services</a>
+  <a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+  <a href="blog.html" data-i18n="nav_articles">Articles</a>
+  <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+
+  <button id="langToggleMobile" class="nav-lang mobile-lang">عربي</button>
+</div>
+<!-- ================= CONTACT HERO ================= -->
+<section class="hero contact-hero">
+  <div class="container contact-hero-grid">
+
+    <!-- TEXT -->
+    <div class="contact-hero-content">
+      <span class="hero-badge" data-i18n="contact_badge"></span>
+
+      <h1>
+        <span class="cta-highlight" data-i18n="contact_title_1"></span><br />
+        <span data-i18n="contact_title_2"></span>
+      </h1>
+
+      <p data-i18n="contact_desc"></p>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="contact-hero-image">
+      <img
+        src="images/contact-hero.png"
+        alt="Smart marketing and growth"
+        loading="lazy"
+      />
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT BANNER -->
+<section class="contact-banner">
+  <div class="container">
+    <div class="contact-banner-box">
+      <img src="images/contact-banner.png" alt="" />
+    </div>
+  </div>
+</section>
+
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section>
+  <div class="container">
+    <h2 class="section-title" data-i18n="contact_form_title">
+      Start Your Free Consultation
+    </h2>
+
+    <div class="cards contact-grid">
+
+      <!-- INFO -->
+      <div class="card">
+        <h3 data-i18n="contact_why_title">Why Ask Us Plus?</h3>
+        <p data-i18n="contact_why_desc"></p>
+        <ul class="contact-list">
+          <li data-i18n="contact_point_1"></li>
+          <li data-i18n="contact_point_2"></li>
+          <li data-i18n="contact_point_3"></li>
+          <li data-i18n="contact_point_4"></li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="card">
+        <form class="contact-form" id="contactForm">
+
+          <div class="form-group">
+            <label data-i18n="contact_name_label">Full Name</label>
+            <input id="contactName" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="contact_phone_label">Phone Number</label>
+            <div class="phone-group">
+              <select id="contactCountryCode" class="country-code">
+                <option value="+20">🇪🇬 +20</option>
+                <option value="+966">🇸🇦 +966</option>
+                <option value="+971">🇦🇪 +971</option>
+                <option value="+965">🇰🇼 +965</option>
+                <option value="+974">🇶🇦 +974</option>
+              </select>
+              <input id="contactPhone" type="tel" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="contact_email_label">Email</label>
+            <input id="contactEmail" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="contact_service_label">Service</label>
+            <select id="contactService" required>
+              <option value="" data-i18n="contact_service_select"></option>
+              <option value="Paid Ads" data-i18n="service_paid"></option>
+              <option value="Social Media" data-i18n="service_social"></option>
+              <option value="Web Design" data-i18n="service_web"></option>
+              <option value="Content Creation" data-i18n="service_content_creation"></option>
+              <option value="Video Production" data-i18n="service_video_production"></option>
+              <option value="Mobile Application" data-i18n="service_mobile_app"></option>
+              <option value="Other" data-i18n="service_other"></option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="contact_message_label">Message</label>
+            <textarea id="contactMessage" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary full" data-i18n="contact_submit">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer no-rtl fixed-footer-mobile">
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <img src="images/footer.png" alt="Ask Us Plus" class="footer-logo">
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4  data-i18n="footer_contact_title">Contact</h4>
+      <p data-i18n="footer_address">
+        <i class="fa-solid fa-location-dot"></i>
+        Zezinia, Alexandria, Egypt
+      </p>
+      <p data-i18n="footer_phone">
+        <i class="fa-solid fa-phone"></i>
+        +20 109 5282 910
+      </p>
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        contact@askusplus.com
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-col">
+      <h4 class="footer-follow" data-i18n="footer_follow_title">Follow Us</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/askusplus5/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/askusplus?igsh=MTljeW5oc3h0YTU3Yw==" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@askusplusmarketing" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.tiktok.com/@askusplus?_r=1&_t=ZS-93YmCLy3WQj" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Ask Us Plus. All rights reserved.
+  </div>
+</footer>
+
+<!-- FLOATING SOCIAL ICONS -->
+<div class="floating-social">
+  <a href="https://www.facebook.com/askusplus5/" target="_blank" class="fb" title="Follow us on Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/askusplus?igsh=MTljeW5oc3h0YTU3Yw==" target="_blank" class="ig" title="Follow us on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@askusplus?_r=1&_t=ZS-93YmCLy3WQj" target="_blank" class="tk" title="Follow us on TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://www.youtube.com/@askusplusmarketing" target="_blank" class="yt" title="Subscribe on YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/201095282910" target="_blank" class="whatsapp-btn" title="Contact us on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- JS -->
+<script type="module" src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("KGDxGD_xR7qNyHROa");
+  </script>
+<script type="module" src="js/contact.js"></script>
+
+
+</body>
+</html>

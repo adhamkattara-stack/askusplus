@@ -1,0 +1,2 @@
+INSERT INTO admins (user_id, email)
+VALUES ('UUID-HERE', 'email@example.com');
